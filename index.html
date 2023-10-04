@@ -101,11 +101,12 @@
             var codigo = document.getElementById("codigo").value
             axios({
                 method: "post",
-                url: "/api/<nome-da-funcao>",
+                url: "/api/gravaRegisto",
                 data: {
                     "PartitionKey": "registo de informações",
                     "RowKey": nome,
-                    "dtNascimento": dtNascimento,
+                    "dtnascimento": dtnascimento,
+                    "genero": genero,
                     "classe": classe,
                     "codigo": codigo
                 }
