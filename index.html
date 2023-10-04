@@ -83,6 +83,9 @@
                             <button class="btn btn--radius btn--green" type="submit"
                                 onclick="escreveInformacacoes()">Submeter</button>
                         </div>
+                        <div class="alert alert-primary" role="alert" id="message">
+                
+                        </div>
                     </div>
                 </div>
             </div>
@@ -112,10 +115,10 @@
                 }
             })
                 .then(response => {
-                    document.getElementById("message").innerHTML = "Saved Successful"
+                    document.getElementById("message").innerHTML = "Registo gravado com sucesso"
                 })
                 .catch(error => {
-                    document.getElementById("message").innerHTML = "It was not possible to save!"
+                    document.getElementById("message").innerHTML = "Ocorreu um erro!"
                 })
         }
     </script>
